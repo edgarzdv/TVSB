@@ -1,0 +1,52 @@
+.articleContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8F8;
+    padding: 5px;
+    border-radius: 8px;
+    height: calc(100vh - 32px); //32px page margin andd padding
+    margin-top: 52px;
+
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.articleListsContainer {
+    width: 100%;
+    display: flex;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &>span {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
+.row {
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(97, 97, 97);
+    border-bottom: 0.5px solid rgb(233, 233, 233);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:hover {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Adjust the values as needed */
+
+    }
+}
